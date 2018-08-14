@@ -27,6 +27,14 @@ restService.post("/inquiry", function(req, res) {
   });
 });
 
+restService.post("/echo", function(req, res) {
+  var text = req.body.queryResult.parameters.givenname
+  
+  return res.json({
+    fulfillmentText: text
+  });
+});
+
 restService.listen(process.env.PORT || 8000, function() {
   console.log("Server up and listening");
 });
