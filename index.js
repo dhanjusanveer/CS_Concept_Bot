@@ -19,6 +19,7 @@ restService.post("/inquiry", function(req, res) {
   
   var intent = req.body.queryResult.intent.displayName;
  
+  // Inquiry intent
   if (intent == "Inquiry") {
     var text = req.body.queryResult.parameters.Service;
     let price = 0;
@@ -30,7 +31,7 @@ restService.post("/inquiry", function(req, res) {
     });
   };
   
-  
+  // Echo intent
   if (intent == "Echo") {
     var text = req.body.queryResult.parameters.givenname
     return res.json({
