@@ -1,6 +1,6 @@
 {
-  "name": "CS-POC",
-  "description": "CS-POC",
+  "name": "CS_POC",
+  "description": "CS_POC",
   "repository": "https://github.com/dhanjusanveer/CS_Concept_Bot.git",
   "keywords": ["api.ai", "dialogflow", "natural language"]
 }
