@@ -14,7 +14,7 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/inquiry", function(req, res) {
-  var speech = req.body.queryResult.parameters.echoText
+  var speech = req.body.queryResult.parameters.Service
    // req.body.result &&
   //  req.body.result.parameters &&
    // req.body.result.parameters.echoText
