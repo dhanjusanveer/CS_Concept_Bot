@@ -23,8 +23,7 @@ restService.post("/inquiry", function(req, res) {
   
   text = 'We offer ' + text + ' for only $' + price;
   return res.json({
-    fulfillmentText: text,
-    source: 'CS_Concept_Bot'
+    fulfillmentText: text
   });
 });
 
