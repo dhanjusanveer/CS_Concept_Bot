@@ -36,6 +36,15 @@ restService.post("/inquiry", function(req, res) {
     var text = req.body.queryResult.parameters.givenname
     return res.json({
     fulfillmentText: text
+      
+      const sheets = require('PATH_TO_SHEETS.JS'); 
+        sheets.append(
+          "Sheet1!A1",
+            [
+             ["data 1", "data 2", "data3"]
+            ]
+      );
+
    });
   };
  
