@@ -2,8 +2,8 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-
 const restService = express();
+const sheets = require('./Sheets/sheets.js');
 
 restService.use(
   bodyParser.urlencoded({
@@ -35,9 +35,7 @@ restService.post("/inquiry", function(req, res) {
   if (intent == "Echo") {
     var text = req.body.queryResult.parameters.givenname
     return res.json({
-    fulfillmentText: text
-      
-      const sheets = require('PATH_TO_SHEETS.JS'); 
+    fulfillmentText: text 
         sheets.append(
           "Sheet1!A1",
             [
